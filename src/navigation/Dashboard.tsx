@@ -1,12 +1,16 @@
 /* eslint-disable react/no-unstable-nested-components */
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {StyleSheet, TextStyle, View} from 'react-native';
+import {Platform, StyleSheet, TextStyle} from 'react-native';
 import {Typography} from '@/components/common';
 import {useThemedStyles} from '@/libs/hooks';
-import {heightPixel, pixelSizeVertical} from '@/libs/utils';
+import {pixelSizeHorizontal, pixelSizeVertical} from '@/libs/utils';
 import {DetailsScreen, HomeScreen, NotificationsScreen} from '@/screens';
 import {Theme, theme as themes} from '@/libs/config';
+import {AccountDetailsIcon, HomeIcon} from '@/components/icons';
+
+import NotificationActiveIcon from '../../assets/icons/notification_fill.svg';
+import NotificationIcon from '../../assets/icons/notification.svg';
 
 const Tab = createBottomTabNavigator();
 
@@ -15,47 +19,44 @@ type TabBarLabelProps = {
 };
 
 export const Dashboard = () => {
-  const {tabBarStyle, container} = useThemedStyles(styles);
+  const {tabBarStyle} = useThemedStyles(styles);
   const tabLabelStyle = (focused: boolean): TextStyle => ({
-    fontWeight: '500',
-    fontSize: themes.fontSize.s,
-    fontFamily: themes.fonts.ManropeSemibold,
-    borderBottomWidth: 3,
-    width: '75%',
-    margin: 'auto',
+    fontWeight: focused ? '600' : '400',
+    fontSize: themes.fontSize.m,
+    fontFamily: themes.fonts.AvertaSemibold,
     textAlign: 'center',
-    marginBottom: 10,
-    paddingVertical: pixelSizeVertical(4),
     borderBottomColor: focused
-      ? themes.colors.blue[100]
+      ? themes.colors.primary[100]
       : themes.colors.white[100],
-    color: focused ? themes.colors.blue[100] : themes.colors.gray[600],
+    color: focused ? themes.colors.primary[100] : themes.colors.gray[300],
   });
 
   return (
-    <View style={container}>
-      <Tab.Navigator
-        screenOptions={{
-          headerShown: false,
-          tabBarStyle,
-        }}>
-        {tabs.map(item => (
-          <Tab.Screen
-            key={item.name}
-            name={item.name}
-            options={{
-              title: item.name,
-              tabBarLabel: ({focused}: TabBarLabelProps) => (
-                <Typography variant="b2" style={tabLabelStyle(focused)}>
-                  {item.name}
-                </Typography>
-              ),
-            }}
-            component={item.component}
-          />
-        ))}
-      </Tab.Navigator>
-    </View>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle,
+        tabBarItemStyle: {
+          marginVertical: pixelSizeVertical(14),
+        },
+      }}>
+      {tabs.map(item => (
+        <Tab.Screen
+          key={item.name}
+          name={item.name}
+          options={{
+            title: item.name,
+            tabBarLabel: ({focused}: TabBarLabelProps) => (
+              <Typography variant="b2" style={tabLabelStyle(focused)}>
+                {item.name}
+              </Typography>
+            ),
+            tabBarIcon: item.icon,
+          }}
+          component={item.component}
+        />
+      ))}
+    </Tab.Navigator>
   );
 };
 
@@ -63,31 +64,51 @@ const tabs = [
   {
     name: 'Home',
     component: HomeScreen,
+    icon: ({focused}: TabBarLabelProps) => (
+      <HomeIcon color={focused ? themes.colors.primary[100] : undefined} />
+    ),
   },
   {
     name: 'Notifications',
     component: NotificationsScreen,
+    icon: ({focused}: TabBarLabelProps) =>
+      focused ? <NotificationActiveIcon /> : <NotificationIcon />,
   },
   {
     name: 'Details',
     component: DetailsScreen,
+    icon: ({focused}: TabBarLabelProps) => (
+      <AccountDetailsIcon
+        color={focused ? themes.colors.primary[100] : undefined}
+      />
+    ),
   },
 ];
 
 const styles = (theme: Theme) => {
   return StyleSheet.create({
-    container: {
-      flex: 1,
-      paddingTop: pixelSizeVertical(20),
-      backgroundColor: theme.colors.white[100],
-    },
     tabBarStyle: {
-      elevation: 0,
       borderTopWidth: 0,
-      minHeight: heightPixel(65),
-    },
-    header: {
-      paddingHorizontal: pixelSizeVertical(16),
+      position: 'absolute',
+      bottom: '5%',
+      height: '9%',
+      borderRadius: 56,
+      marginHorizontal: pixelSizeHorizontal(24),
+      ...Platform.select({
+        ios: {
+          shadowColor: 'rgba(0, 0, 0, 0.1)',
+          shadowOffset: {width: 0, height: 20},
+          shadowOpacity: 1,
+          shadowRadius: 12.5,
+        },
+        android: {
+          shadowColor: 'rgba(0, 0, 0, 0.6)',
+          shadowOffset: {width: 0, height: 0},
+          shadowOpacity: 1,
+          shadowRadius: 5,
+          elevation: 10, // For Android shadow
+        },
+      }),
     },
   });
 };

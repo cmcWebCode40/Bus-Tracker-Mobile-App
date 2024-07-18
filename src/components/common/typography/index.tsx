@@ -2,7 +2,7 @@ import {Text, TextProps, StyleSheet} from 'react-native';
 import React from 'react';
 import {useThemedStyles} from '@/libs/hooks';
 import {Theme} from '@/libs/config/theme';
-import {fontPixel} from '@/libs/utils';
+import {fontPixel, heightPixel} from '@/libs/utils';
 
 type Heading = 'h1' | 'h2';
 type Body = 'b1' | 'b2';
@@ -26,26 +26,33 @@ const styles = ({colors, fontSize, fonts}: Theme) => {
     h1: {
       fontSize: fontPixel(fontSize.xxl),
       fontWeight: '700',
-      fontFamily: fonts.ManropeBold,
-      color: colors.black[200],
+      fontFamily: fonts.AvertaBold,
+      color: colors.black[100],
     },
     h2: {
       fontSize: fontPixel(fontSize.xl),
       fontWeight: '500',
       color: colors.black[200],
-      fontFamily: fonts.ManropeSemibold,
+      fontFamily: fonts.AvertaSemibold,
     },
     b1: {
       fontSize: fontPixel(fontSize.l),
       fontWeight: '400',
       color: colors.gray[300],
-      fontFamily: fonts.ManropeRegular,
+      fontFamily: fonts.AvertaRegular,
     },
     b2: {
       fontSize: fontPixel(fontSize.m),
       fontWeight: '400',
-      color: colors.gray[300],
-      fontFamily: fonts.ManropeLight,
+      color: colors.gray[200],
+      fontFamily: fonts.AvertaRegular,
+    },
+    b3: {
+      fontSize: fontPixel(fontSize.s),
+      fontWeight: '400',
+      color: colors.gray[100],
+      fontFamily: fonts.AvertaRegular,
+      lineHeight: heightPixel(16),
     },
   });
 };

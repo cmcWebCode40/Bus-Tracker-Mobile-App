@@ -49,13 +49,22 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Manrope-Bold.ttf</string>
-		<string>Manrope-ExtraBold.ttf</string>
-		<string>Manrope-ExtraLight.ttf</string>
-		<string>Manrope-Light.ttf</string>
-		<string>Manrope-Medium.ttf</string>
-		<string>Manrope-Regular.ttf</string>
-		<string>Manrope-SemiBold.ttf</string>
+		<string>Averta-Black.otf</string>
+		<string>Averta-BlackItalic.otf</string>
+		<string>Averta-Bold.otf</string>
+		<string>Averta-BoldItalic.otf</string>
+		<string>Averta-ExtraBold.otf</string>
+		<string>Averta-ExtraBoldItalic.otf</string>
+		<string>Averta-Extrathin.otf</string>
+		<string>Averta-ExtrathinItalic.otf</string>
+		<string>Averta-Light.otf</string>
+		<string>Averta-LightItalic.otf</string>
+		<string>Averta-Regular.otf</string>
+		<string>Averta-RegularItalic.otf</string>
+		<string>Averta-Semibold.otf</string>
+		<string>Averta-SemiboldItalic.otf</string>
+		<string>Averta-Thin.otf</string>
+		<string>Averta-ThinItalic.otf</string>
 	</array>
 </dict>
 </plist>

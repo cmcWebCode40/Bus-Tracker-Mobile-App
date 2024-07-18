@@ -1,20 +1,24 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import {RootStackScreens} from './type';
-import {Dashboard} from './Dashboard';
-import {DetailsScreen, NotificationsScreen} from '@/screens';
+import {MainNavigator} from './MainNavigator';
+import {AuthNavigator} from './AuthNavigator';
+import {useUserLocationContext} from '@/libs/context';
 
 const Stack = createNativeStackNavigator<RootStackScreens>();
 
 export const RootNavigator: React.FunctionComponent = () => {
+  const {isAuthenticated} = useUserLocationContext();
   return (
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name="Dashboard" component={Dashboard} />
-      <Stack.Screen name="Details" component={DetailsScreen} />
-      <Stack.Screen name="Notifications" component={NotificationsScreen} />
+      {isAuthenticated ? (
+        <Stack.Screen name="Main" component={MainNavigator} />
+      ) : (
+        <Stack.Screen name="Auth" component={AuthNavigator} />
+      )}
     </Stack.Navigator>
   );
 };

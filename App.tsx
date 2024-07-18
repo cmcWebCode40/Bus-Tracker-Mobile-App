@@ -4,14 +4,17 @@ import {StatusBar} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {RootNavigator} from './src/navigation';
+import {UserLocationProvider} from '@/libs/context';
 
 function App(): React.JSX.Element {
   return (
     <SafeAreaProvider>
-      <NavigationContainer>
-        <StatusBar barStyle={'default'} />
-        <RootNavigator />
-      </NavigationContainer>
+      <UserLocationProvider>
+        <NavigationContainer>
+          <StatusBar barStyle={'default'} />
+          <RootNavigator />
+        </NavigationContainer>
+      </UserLocationProvider>
     </SafeAreaProvider>
   );
 }

@@ -2,32 +2,68 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/Manrope-Bold.ttf",
-      "sha1": "a6b63c832d12337efb3123f47863f54472c81bf5"
+      "path": "assets/fonts/Averta-Black.otf",
+      "sha1": "ded2045d85a34b99e3ade31d8c18662a49fb7eeb"
     },
     {
-      "path": "assets/fonts/Manrope-ExtraBold.ttf",
-      "sha1": "01e9f1ed4df60771240fd42f5ac9dcaf398f110b"
+      "path": "assets/fonts/Averta-BlackItalic.otf",
+      "sha1": "89af8e4f08e7aa5936ce447d8c66aae81629bc8a"
     },
     {
-      "path": "assets/fonts/Manrope-ExtraLight.ttf",
-      "sha1": "03f11f0309f7f955fe90e3fdf22fee5e60bada4e"
+      "path": "assets/fonts/Averta-Bold.otf",
+      "sha1": "eee2ac8dc70aa69b04643f552197776763567860"
     },
     {
-      "path": "assets/fonts/Manrope-Light.ttf",
-      "sha1": "67a7446c44660168ed179812753b03390858aa92"
+      "path": "assets/fonts/Averta-BoldItalic.otf",
+      "sha1": "ecf83a45545e213835218f9d7bd03bf2b31f6b29"
     },
     {
-      "path": "assets/fonts/Manrope-Medium.ttf",
-      "sha1": "d62e1b2498f65ea5bc20fc5e365d19239527b419"
+      "path": "assets/fonts/Averta-ExtraBold.otf",
+      "sha1": "0854c0354154442a11f646d6f7990a41f9e4d30d"
     },
     {
-      "path": "assets/fonts/Manrope-Regular.ttf",
-      "sha1": "036b14064c7b90b4b200f2730981effea5e58b15"
+      "path": "assets/fonts/Averta-ExtraBoldItalic.otf",
+      "sha1": "3da2a9856ad516a9da9eb0c7a9fe67ebcd71deec"
     },
     {
-      "path": "assets/fonts/Manrope-SemiBold.ttf",
-      "sha1": "e423e112f4832916b05308934c10aa84fd14c607"
+      "path": "assets/fonts/Averta-Extrathin.otf",
+      "sha1": "30612288bc99e36f12cb0c75971dffaa0ec98c53"
+    },
+    {
+      "path": "assets/fonts/Averta-ExtrathinItalic.otf",
+      "sha1": "4923265aea46d4650ac6209fd577a7244c8684b9"
+    },
+    {
+      "path": "assets/fonts/Averta-Light.otf",
+      "sha1": "928ee32fe41970561f374db88d9a228713459174"
+    },
+    {
+      "path": "assets/fonts/Averta-LightItalic.otf",
+      "sha1": "1995af0575f63f8a2df455a00b48a80b664e5f44"
+    },
+    {
+      "path": "assets/fonts/Averta-Regular.otf",
+      "sha1": "29231937d68ccee7c14448650502c99da2fe36c3"
+    },
+    {
+      "path": "assets/fonts/Averta-RegularItalic.otf",
+      "sha1": "55d4d9ddae008f8847c9a52b3e5cbeb304076011"
+    },
+    {
+      "path": "assets/fonts/Averta-Semibold.otf",
+      "sha1": "b3205dd10f3f75d4d2c1f77b4c7f3db3af1bfacd"
+    },
+    {
+      "path": "assets/fonts/Averta-SemiboldItalic.otf",
+      "sha1": "87c63731423cc6467b7bd769ff0c68c8e9f4cbec"
+    },
+    {
+      "path": "assets/fonts/Averta-Thin.otf",
+      "sha1": "de384b9cf41eb8821a3d744203000ae47b716f2f"
+    },
+    {
+      "path": "assets/fonts/Averta-ThinItalic.otf",
+      "sha1": "8feb170b3ca0a5cf59c1f66dd9554a0611caadfd"
     }
   ]
 }

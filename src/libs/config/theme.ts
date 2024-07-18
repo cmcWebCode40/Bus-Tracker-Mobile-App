@@ -1,14 +1,24 @@
-import {colors} from './../constants/colors';
+import {colors} from '../constants';
 
 export const theme = {
   colors,
   fonts: {
-    ManropeBold: 'Manrope-Bold',
-    ManropeLight: 'Manrope-Light',
-    ManropeRegular: 'Manrope-Regular',
-    ManropeSemibold: 'Manrope-Semibold',
-    ManropeExtraBold: 'Manrope-ExtraBold',
-    ManropeExtraLight: 'Manrope-ExtraLight',
+    AvertaBlack: 'Averta-Black',
+    AvertaBlackItalic: 'Averta-BlackItalic',
+    AvertaBold: 'Averta-Bold',
+    AvertaBoldItalic: 'Averta-BoldItalic',
+    AvertaExtraBold: 'Averta-ExtraBold',
+    AvertaExtraBoldItalic: 'Averta-ExtraBoldItalic',
+    AvertaExtraThin: 'Averta-Extrathin',
+    AvertaExtrathinItalic: 'Averat-ExtrathinItalic',
+    AvertaLight: 'Averta-Light',
+    AvertaLightItalic: 'Averta-LightItalic',
+    AvertaRegular: 'Averta-Regular',
+    AvertaRegularItalic: 'Averta-RegularItalic',
+    AvertaSemibold: 'Averta-Semibold',
+    AvertaSemiboldItalic: 'Averta-SemiboldItalic',
+    AvertaThin: 'Averta-Thin',
+    AvertaThinItalic: 'Averta-ThinItalic',
   },
   spacing: {
     xs: 4,

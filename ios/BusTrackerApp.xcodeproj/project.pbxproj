@@ -14,13 +14,22 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-BusTrackerApp-BusTrackerAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-BusTrackerApp-BusTrackerAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		BCA37790C4484B0CAAF32FF3 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 822510949CA74DB59A7AC1E0 /* Manrope-Bold.ttf */; };
-		D92120A3FC074EE78CF1BA45 /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39E94205E31E46F8B92D1BDC /* Manrope-ExtraBold.ttf */; };
-		7050941BC89B4EFC9F4F3C6D /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D92366322B747079BE2E2EA /* Manrope-ExtraLight.ttf */; };
-		30E40DAE23BB40E99C005CF6 /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B87BE0308514705899D9391 /* Manrope-Light.ttf */; };
-		E87FB1F87FDD44F5995ADADD /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67A3490DEFA4430C965B7F36 /* Manrope-Medium.ttf */; };
-		0D41E2ABD11842E1B4FCE977 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 231CF8E58AD64BAF98D47F84 /* Manrope-Regular.ttf */; };
-		4D88F40D1FD442A2A40CB093 /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CB6A4AD3CE94088A12494A7 /* Manrope-SemiBold.ttf */; };
+		F89994A5B75147ECB863BF00 /* Averta-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5B4E0EF4DB4DEF90F492B5 /* Averta-Black.otf */; };
+		969D727AE8CD4F799AB1322D /* Averta-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 295A0DCCCA0B4536B1FE6A11 /* Averta-BlackItalic.otf */; };
+		F4ABF24A2FF0403B820A724A /* Averta-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEF7440F95514A7DB8CD125A /* Averta-Bold.otf */; };
+		DECBE75B25354A488B0F605A /* Averta-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA5DED8BB8B14F26BB479E23 /* Averta-BoldItalic.otf */; };
+		676A22AEAC4541C4929F29F1 /* Averta-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC88F4AC87A4B2581FE9C5A /* Averta-ExtraBold.otf */; };
+		650F057EADFE4CC6BD835ED5 /* Averta-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 555C82791D6C4D4C8BA832FB /* Averta-ExtraBoldItalic.otf */; };
+		04A2591FEEF34F799AFC026D /* Averta-Extrathin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68859472B77444B7BA76FC8E /* Averta-Extrathin.otf */; };
+		1347B543AD8742DD8C490E9C /* Averta-ExtrathinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7264BC88C9F74D3B985659A5 /* Averta-ExtrathinItalic.otf */; };
+		3A2CC286F44444A1A94C8851 /* Averta-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C963293292AC4AACBB32842E /* Averta-Light.otf */; };
+		D2A03DA8EFD040C691573CA6 /* Averta-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0AEE09E8CA24EA2BB4EAC86 /* Averta-LightItalic.otf */; };
+		D0B6C5A5C0FA48F7B4A05806 /* Averta-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85B3512BA709416296CDE2FB /* Averta-Regular.otf */; };
+		833180136F754F8993DA2B47 /* Averta-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8DBE4AB0593F49688B63E712 /* Averta-RegularItalic.otf */; };
+		33076485FE7446C8B275EEC9 /* Averta-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F86E1D7B44DB49C9A3E2612C /* Averta-Semibold.otf */; };
+		3DE0A2DE532E41DC94DF09CC /* Averta-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 20EEC4911C9E4E16A166C3FC /* Averta-SemiboldItalic.otf */; };
+		8A89301BDD7C41D1B6DCF2F6 /* Averta-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA3D11E3A6104069A3156465 /* Averta-Thin.otf */; };
+		01F38FCE638948438E8B05BE /* Averta-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5ED12BF3D36472C940F1EC2 /* Averta-ThinItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +61,22 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BusTrackerApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-BusTrackerApp-BusTrackerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusTrackerApp-BusTrackerAppTests.release.xcconfig"; path = "Target Support Files/Pods-BusTrackerApp-BusTrackerAppTests/Pods-BusTrackerApp-BusTrackerAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		822510949CA74DB59A7AC1E0 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; name = "Manrope-Bold.ttf"; path = "../assets/fonts/Manrope-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		39E94205E31E46F8B92D1BDC /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Manrope-ExtraBold.ttf"; path = "../assets/fonts/Manrope-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2D92366322B747079BE2E2EA /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Manrope-ExtraLight.ttf"; path = "../assets/fonts/Manrope-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9B87BE0308514705899D9391 /* Manrope-Light.ttf */ = {isa = PBXFileReference; name = "Manrope-Light.ttf"; path = "../assets/fonts/Manrope-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		67A3490DEFA4430C965B7F36 /* Manrope-Medium.ttf */ = {isa = PBXFileReference; name = "Manrope-Medium.ttf"; path = "../assets/fonts/Manrope-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		231CF8E58AD64BAF98D47F84 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; name = "Manrope-Regular.ttf"; path = "../assets/fonts/Manrope-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8CB6A4AD3CE94088A12494A7 /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; name = "Manrope-SemiBold.ttf"; path = "../assets/fonts/Manrope-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7F5B4E0EF4DB4DEF90F492B5 /* Averta-Black.otf */ = {isa = PBXFileReference; name = "Averta-Black.otf"; path = "../assets/fonts/Averta-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		295A0DCCCA0B4536B1FE6A11 /* Averta-BlackItalic.otf */ = {isa = PBXFileReference; name = "Averta-BlackItalic.otf"; path = "../assets/fonts/Averta-BlackItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CEF7440F95514A7DB8CD125A /* Averta-Bold.otf */ = {isa = PBXFileReference; name = "Averta-Bold.otf"; path = "../assets/fonts/Averta-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DA5DED8BB8B14F26BB479E23 /* Averta-BoldItalic.otf */ = {isa = PBXFileReference; name = "Averta-BoldItalic.otf"; path = "../assets/fonts/Averta-BoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0AC88F4AC87A4B2581FE9C5A /* Averta-ExtraBold.otf */ = {isa = PBXFileReference; name = "Averta-ExtraBold.otf"; path = "../assets/fonts/Averta-ExtraBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		555C82791D6C4D4C8BA832FB /* Averta-ExtraBoldItalic.otf */ = {isa = PBXFileReference; name = "Averta-ExtraBoldItalic.otf"; path = "../assets/fonts/Averta-ExtraBoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		68859472B77444B7BA76FC8E /* Averta-Extrathin.otf */ = {isa = PBXFileReference; name = "Averta-Extrathin.otf"; path = "../assets/fonts/Averta-Extrathin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7264BC88C9F74D3B985659A5 /* Averta-ExtrathinItalic.otf */ = {isa = PBXFileReference; name = "Averta-ExtrathinItalic.otf"; path = "../assets/fonts/Averta-ExtrathinItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C963293292AC4AACBB32842E /* Averta-Light.otf */ = {isa = PBXFileReference; name = "Averta-Light.otf"; path = "../assets/fonts/Averta-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C0AEE09E8CA24EA2BB4EAC86 /* Averta-LightItalic.otf */ = {isa = PBXFileReference; name = "Averta-LightItalic.otf"; path = "../assets/fonts/Averta-LightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		85B3512BA709416296CDE2FB /* Averta-Regular.otf */ = {isa = PBXFileReference; name = "Averta-Regular.otf"; path = "../assets/fonts/Averta-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8DBE4AB0593F49688B63E712 /* Averta-RegularItalic.otf */ = {isa = PBXFileReference; name = "Averta-RegularItalic.otf"; path = "../assets/fonts/Averta-RegularItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F86E1D7B44DB49C9A3E2612C /* Averta-Semibold.otf */ = {isa = PBXFileReference; name = "Averta-Semibold.otf"; path = "../assets/fonts/Averta-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		20EEC4911C9E4E16A166C3FC /* Averta-SemiboldItalic.otf */ = {isa = PBXFileReference; name = "Averta-SemiboldItalic.otf"; path = "../assets/fonts/Averta-SemiboldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DA3D11E3A6104069A3156465 /* Averta-Thin.otf */ = {isa = PBXFileReference; name = "Averta-Thin.otf"; path = "../assets/fonts/Averta-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A5ED12BF3D36472C940F1EC2 /* Averta-ThinItalic.otf */ = {isa = PBXFileReference; name = "Averta-ThinItalic.otf"; path = "../assets/fonts/Averta-ThinItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,13 +186,22 @@
 		861EC905E107420B9E277457 /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				822510949CA74DB59A7AC1E0 /* Manrope-Bold.ttf */,
-				39E94205E31E46F8B92D1BDC /* Manrope-ExtraBold.ttf */,
-				2D92366322B747079BE2E2EA /* Manrope-ExtraLight.ttf */,
-				9B87BE0308514705899D9391 /* Manrope-Light.ttf */,
-				67A3490DEFA4430C965B7F36 /* Manrope-Medium.ttf */,
-				231CF8E58AD64BAF98D47F84 /* Manrope-Regular.ttf */,
-				8CB6A4AD3CE94088A12494A7 /* Manrope-SemiBold.ttf */,
+				7F5B4E0EF4DB4DEF90F492B5 /* Averta-Black.otf */,
+				295A0DCCCA0B4536B1FE6A11 /* Averta-BlackItalic.otf */,
+				CEF7440F95514A7DB8CD125A /* Averta-Bold.otf */,
+				DA5DED8BB8B14F26BB479E23 /* Averta-BoldItalic.otf */,
+				0AC88F4AC87A4B2581FE9C5A /* Averta-ExtraBold.otf */,
+				555C82791D6C4D4C8BA832FB /* Averta-ExtraBoldItalic.otf */,
+				68859472B77444B7BA76FC8E /* Averta-Extrathin.otf */,
+				7264BC88C9F74D3B985659A5 /* Averta-ExtrathinItalic.otf */,
+				C963293292AC4AACBB32842E /* Averta-Light.otf */,
+				C0AEE09E8CA24EA2BB4EAC86 /* Averta-LightItalic.otf */,
+				85B3512BA709416296CDE2FB /* Averta-Regular.otf */,
+				8DBE4AB0593F49688B63E712 /* Averta-RegularItalic.otf */,
+				F86E1D7B44DB49C9A3E2612C /* Averta-Semibold.otf */,
+				20EEC4911C9E4E16A166C3FC /* Averta-SemiboldItalic.otf */,
+				DA3D11E3A6104069A3156465 /* Averta-Thin.otf */,
+				A5ED12BF3D36472C940F1EC2 /* Averta-ThinItalic.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -275,13 +302,22 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				BCA37790C4484B0CAAF32FF3 /* Manrope-Bold.ttf in Resources */,
-				D92120A3FC074EE78CF1BA45 /* Manrope-ExtraBold.ttf in Resources */,
-				7050941BC89B4EFC9F4F3C6D /* Manrope-ExtraLight.ttf in Resources */,
-				30E40DAE23BB40E99C005CF6 /* Manrope-Light.ttf in Resources */,
-				E87FB1F87FDD44F5995ADADD /* Manrope-Medium.ttf in Resources */,
-				0D41E2ABD11842E1B4FCE977 /* Manrope-Regular.ttf in Resources */,
-				4D88F40D1FD442A2A40CB093 /* Manrope-SemiBold.ttf in Resources */,
+				F89994A5B75147ECB863BF00 /* Averta-Black.otf in Resources */,
+				969D727AE8CD4F799AB1322D /* Averta-BlackItalic.otf in Resources */,
+				F4ABF24A2FF0403B820A724A /* Averta-Bold.otf in Resources */,
+				DECBE75B25354A488B0F605A /* Averta-BoldItalic.otf in Resources */,
+				676A22AEAC4541C4929F29F1 /* Averta-ExtraBold.otf in Resources */,
+				650F057EADFE4CC6BD835ED5 /* Averta-ExtraBoldItalic.otf in Resources */,
+				04A2591FEEF34F799AFC026D /* Averta-Extrathin.otf in Resources */,
+				1347B543AD8742DD8C490E9C /* Averta-ExtrathinItalic.otf in Resources */,
+				3A2CC286F44444A1A94C8851 /* Averta-Light.otf in Resources */,
+				D2A03DA8EFD040C691573CA6 /* Averta-LightItalic.otf in Resources */,
+				D0B6C5A5C0FA48F7B4A05806 /* Averta-Regular.otf in Resources */,
+				833180136F754F8993DA2B47 /* Averta-RegularItalic.otf in Resources */,
+				33076485FE7446C8B275EEC9 /* Averta-Semibold.otf in Resources */,
+				3DE0A2DE532E41DC94DF09CC /* Averta-SemiboldItalic.otf in Resources */,
+				8A89301BDD7C41D1B6DCF2F6 /* Averta-Thin.otf in Resources */,
+				01F38FCE638948438E8B05BE /* Averta-ThinItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
