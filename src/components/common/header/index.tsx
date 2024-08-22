@@ -46,7 +46,6 @@ export const Header: React.FunctionComponent<HeaderProps> = ({
       ) : (
         <View />
       )}
-
       <Typography variant="h2" style={style.title}>
         {title}
       </Typography>

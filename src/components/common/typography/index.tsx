@@ -5,7 +5,7 @@ import {Theme} from '@/libs/config/theme';
 import {fontPixel, heightPixel} from '@/libs/utils';
 
 type Heading = 'h1' | 'h2';
-type Body = 'b1' | 'b2';
+type Body = 'b1' | 'b2' | 'b3';
 
 interface TypographyProps extends TextProps {
   variant?: Heading | Body;

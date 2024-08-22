@@ -1,9 +1,9 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import {RootStackScreens} from './type';
+import {AuthStackScreens} from './type';
 import {AuthenticationScreen} from '@/screens';
 
-const Stack = createNativeStackNavigator<RootStackScreens>();
+const Stack = createNativeStackNavigator<AuthStackScreens>();
 
 export const AuthNavigator: React.FunctionComponent = () => {
   return (
@@ -11,7 +11,7 @@ export const AuthNavigator: React.FunctionComponent = () => {
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name="Auth" component={AuthenticationScreen} />
+      <Stack.Screen name="Authentication" component={AuthenticationScreen} />
     </Stack.Navigator>
   );
 };

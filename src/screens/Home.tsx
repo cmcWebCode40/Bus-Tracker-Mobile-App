@@ -1,112 +1,58 @@
-import {View, Text, StyleSheet} from 'react-native';
-import React, {useEffect, useState} from 'react';
+import {StyleSheet} from 'react-native';
+import React from 'react';
 import {ScreenLayout} from '@/components/layout';
 import {useThemedStyles} from '@/libs/hooks';
-import {Theme} from '@/libs/config';
-import MapView, {
-  Callout,
-  Marker,
-  PROVIDER_GOOGLE,
-  Polyline,
-} from 'react-native-maps';
-import Geolocation from '@react-native-community/geolocation';
-import {BusIcon} from '@/components/icons';
-import MapViewDirections from 'react-native-maps-directions';
-
-const origin = {
-  latitude: 6.42988,
-  longitude: 3.42324,
-};
-const destination = {
-  latitude: 6.467391,
-  longitude: 3.59659,
-};
+import {useUserLocationContext} from '@/libs/context';
+import {BusTrackerControl, BusTrackingView} from '@/features/bus-tracking';
+import LeafletView from '@/leaflet-view';
 
 export const HomeScreen: React.FunctionComponent = () => {
   const style = useThemedStyles(styles);
-  const [currentLocation, setCurrentLocation] = useState({
-    latitude: 6.42988,
-    longitude: 3.42324,
-  });
-  const [destinationLocation, setDestinationLocation] = useState({
-    latitude: 6.467391,
-    longitude: 3.59659,
-  });
+  const {currentLocation} = useUserLocationContext();
 
-  useEffect(() => {
-    // Geolocation.getCurrentPosition(
-    //   position => {
-    //     setCurrentLocation({
-    //       latitude: position.coords.latitude,
-    //       longitude: position.coords.longitude,
-    //     });
-    //   },
-    //   error => console.error(error),
-    //   {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000},
-    // );
-  }, []);
+  const coordinates = currentLocation.location;
 
-  if (!currentLocation) {
-    return null; // or some loading indicator
-  }
+  const latitude = coordinates?.length > 0 ? coordinates[0] : 0;
+  const longitude = coordinates?.length > 0 ? coordinates[1] : 0;
 
-  const coordinates = [
-    {latitude: currentLocation.latitude, longitude: currentLocation.longitude},
-    {
-      latitude: destinationLocation.latitude,
-      longitude: destinationLocation.longitude,
-    },
-  ];
+  console.log('============coordinates========================');
+  console.log(longitude, latitude);
+  console.log('====================================');
+
   return (
-    <ScreenLayout>
-      <View style={style.container}>
-        <MapView
-          style={style.map}
-          initialRegion={{
-            latitude: currentLocation.latitude,
-            longitude: currentLocation.longitude,
-            latitudeDelta: 0.1,
-            longitudeDelta: 0.1,
-          }}
-          showsTraffic={true}>
-          <Marker coordinate={currentLocation}>
-            <BusIcon />
-            <Callout>
-              <View>
-                <Text>Estimated Arrival: 10 mins</Text>
-              </View>
-            </Callout>
-          </Marker>
-          <Marker coordinate={destinationLocation} />
-          {/* <Polyline
-            coordinates={coordinates}
-            strokeColor="#3EC3FF"
-            strokeWidth={6}
-          /> */}
-          <MapViewDirections
-            origin={origin}
-            strokeColor="#0275D8"
-            strokeWidth={5}
-            destination={destination}
-            apikey={''}
-          />
-        </MapView>
-      </View>
+    <ScreenLayout style={style.wrapper}>
+      <BusTrackingView />
+      <LeafletView
+        zoom={17}
+        mapMarkers={[
+          {
+            id: '1',
+            position: {lat: latitude, lng: longitude},
+            size: [50, 50],
+            icon: 'https://cdn-icons-png.flaticon.com/512/744/744466.png',
+          },
+        ]}
+        mapCenterPosition={{
+          lat: latitude,
+          lng: longitude,
+          // zoom: 14,
+        }}
+        doDebug={false}
+      />
+      <BusTrackerControl />
     </ScreenLayout>
   );
 };
 
-const styles = (theme: Theme) => {
+const styles = () => {
   return StyleSheet.create({
+    wrapper: {
+      paddingHorizontal: 0,
+      paddingVertical: 0,
+    },
     container: {
-      ...StyleSheet.absoluteFillObject,
       justifyContent: 'flex-end',
       alignItems: 'center',
-    },
-    map: {
-      height: '100%',
-      width: '100%',
-      ...StyleSheet.absoluteFillObject,
     },
   });
 };

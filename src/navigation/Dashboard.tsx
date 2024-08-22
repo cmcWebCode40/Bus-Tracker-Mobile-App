@@ -6,7 +6,7 @@ import {Typography} from '@/components/common';
 import {useThemedStyles} from '@/libs/hooks';
 import {pixelSizeHorizontal, pixelSizeVertical} from '@/libs/utils';
 import {DetailsScreen, HomeScreen, NotificationsScreen} from '@/screens';
-import {Theme, theme as themes} from '@/libs/config';
+import {theme as themes} from '@/libs/config';
 import {AccountDetailsIcon, HomeIcon} from '@/components/icons';
 
 import NotificationActiveIcon from '../../assets/icons/notification_fill.svg';
@@ -85,7 +85,7 @@ const tabs = [
   },
 ];
 
-const styles = (theme: Theme) => {
+const styles = () => {
   return StyleSheet.create({
     tabBarStyle: {
       borderTopWidth: 0,
